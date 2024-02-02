@@ -63,6 +63,7 @@ function SendMail({ to, setTo, subject, setSubject, message, setMessage }) {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button>Submit</button>
+        <button> Submit</button>
       </form>
     </div>
   );
