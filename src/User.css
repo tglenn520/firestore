@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+
+  border-bottom: 1px solid lightgray;
+  color: rgb(44, 44, 44);
+}
+.user > .to {
+  font-size: 12px;
+}
+
+.user p > span {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.user > .subject {
+  flex: 0.7;
+  font-size: 12px;
+  color: gray;
+}
+
+.user > .message {
+  /* flex: 0.7; */
+  font-size: 12px;
+  margin-right: 20px;
+}

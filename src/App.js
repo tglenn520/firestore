@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import SendMail from "./SendMail";
+import Feed from "./Feed";
 
 function App() {
+  const [to, setTo] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SendMail
+        to={to}
+        setTo={setTo}
+        subject={subject}
+        setSubject={setSubject}
+        message={message}
+        setMessage={setMessage}
+      />
+      <Feed />
     </div>
   );
 }
